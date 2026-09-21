@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-// Base class
+
 class Student
 {
 protected:
@@ -20,7 +20,7 @@ public:
     }
 };
 
-// Derived class
+
 class Marks : public Student
 {
 protected:
@@ -39,7 +39,7 @@ public:
     }
 };
 
-// Derived class from Marks
+
 class Result : public Marks
 {
 private:
@@ -73,10 +73,7 @@ public:
         cout << "\nTotal Marks  : " << total << " / 500" << endl;
         cout << "Percentage   : " << percentage << "%" << endl;
 
-        if (percentage >= 40)
-            cout << "Result       : PASS" << endl;
-        else
-            cout << "Result       : FAIL" << endl;
+       
     }
 };
 
